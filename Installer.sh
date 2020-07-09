@@ -1,16 +1,16 @@
 #!/bin/bash
-
-#Run this script as root..
-#USE: bash Installer.sh inorder to run the Script. 
-
 apt-get update -y
 apt-get upgrade -qq
 
-service postgresql start
+#Run this script as root tho it can be run with Sudo Priv.
+#USE: bash Installer.sh inorder to run the Script. 
 
-x="python-setuptools python3-pip python-pip terminator bulk-extractor binwalk volatility foremost etherape masscan nload  steghide torbrowser-launcher zip unzip gedit geany"
+systemctl enable postgresql # MSFConsole faster load...
+cd ~/Desktop/ # Install on Current User's Desktop directory.
 
-for i in $x
+software="python-setuptools python3-pip python-pip terminator bulk-extractor binwalk volatility foremost etherape masscan nload  steghide torbrowser-launcher zip unzip gedit geany"
+
+for i in $software
 do
 echo "==============================="
 echo ""
