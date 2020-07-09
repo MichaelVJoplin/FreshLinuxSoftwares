@@ -1,4 +1,8 @@
 #!/bin/bash
+
+#Run this script as root..
+#USE: bash Installer.sh inorder to run the Script. 
+
 apt-get update -y
 apt-get upgrade -qq
 
