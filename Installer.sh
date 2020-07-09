@@ -1,6 +1,8 @@
 #!/bin/bash
+apt-get update -y
+apt-get upgrade -qq
 
-
+service postgresql start
 
 x="python-setuptools python3-pip python-pip terminator bulk-extractor binwalk volatility foremost etherape masscan nload  steghide torbrowser-launcher zip unzip gedit geany"
 
@@ -17,14 +19,14 @@ done
 
 echo "==============================="
 echo ""
-echo "##### INSTALLING CapTipper #####"
+echo "##### IMPORTING CapTipper #####"
 echo ""
 echo "==============================="
 
 git clone https://github.com/omriher/CapTipper.git
 echo "==============================="
 echo ""
-echo "##### INSTALLING LineEnum #####"
+echo "##### IMPORTING LineEnum #####"
 echo ""
 echo "==============================="
 
@@ -32,7 +34,7 @@ git clone https://github.com/rebootuser/LinEnum.git
 
 echo "==============================="
 echo ""
-echo "##### INSTALLING Vulnscan #####"
+echo "##### IMPORTING Vulnscan #####"
 echo ""
 echo "==============================="
 
@@ -41,7 +43,7 @@ ln -s `pwd`/scipag_vulscan /usr/share/nmap/scripts/vulscan
 
 echo "==============================="
 echo ""
-echo "##### INSTALLING Nipe #####"
+echo "##### IMPORTING Nipe #####"
 echo ""
 echo "==============================="
 
