@@ -47,6 +47,14 @@ ln -s `pwd`/scipag_vulscan /usr/share/nmap/scripts/vulscan
 
 echo "==============================="
 echo ""
+echo "##### IMPORTING Python related Packages/Libraries #####"
+echo ""
+echo "==============================="
+
+pip install requests -U
+
+echo "==============================="
+echo ""
 echo "##### IMPORTING Nipe #####"
 echo ""
 echo "==============================="
